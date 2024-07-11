@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgb(44, 98, 114), rgb(31, 61, 71), rgb(10, 49, 64));
+        }
+
+        h1 {
+            background:linear-gradient(to right,red,rgb(233, 214, 7),rgb(16, 216, 16));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 100px;
+            text-align: center;
+        }
+        @media (max-width:500px)
+        {
+            h1
+            {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a dummy Dashboard</h1>
+    </div>
+</body>
+
+</html>
