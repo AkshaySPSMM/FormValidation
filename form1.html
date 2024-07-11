@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="form1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" novalidate>
+        <h1>Registration</h1>
+        <div id="personal-data">
+          <label for="consent">Enter Personal Data</label>
+          <input id="consent" name="consent" type="checkbox" />
+          <div class="error"></div>
+        </div>
+        <div class="Name">
+          <div class="input-control">
+            <label for="firstName">*First Name</label>
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              placeholder="Enter First Name"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="middleName">Middle Name</label>
+            <input
+              id="middleName"
+              name="middleName"
+              type="text"
+              placeholder="Enter Middle Name"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="lastName">*Last Name</label>
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              placeholder="Enter Last Name"
+            />
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="input-control">
+          <label for="address">*Address</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="5"
+            placeholder="Enter Address"
+          ></textarea>
+          <div class="error"></div>
+        </div>
+        <div class="Password">
+          <div class="input-control">
+            <label for="password">*Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Enter Password"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="password2">*Confirm Password</label>
+            <input
+              id="password2"
+              name="password2"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="phoneAndEmail">
+          <div class="input-control">
+            <label for="phoneNumber">*Phone Number</label>
+            <input
+              id="phoneNumber"
+              name="phoneNumber"
+              type="tel"
+              placeholder="Enter Phone No"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control optional">
+            <label for="email">*Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter Email Id"
+            />
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="genderAndBirthday optional">
+          <div class="input-control optional" id="genderContainer">
+            <label for="gender">*Gender<br /> </label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+            <div class="error"></div>
+          </div>
+          <div class="input-control optional">
+            <label for="birthday">*Birthday</label>
+            <input id="birthday" name="birthday" type="date" min="2000-01-01" />
+            <div class="error"></div>
+          </div>
+        </div>
+        <div id="termsandCondition">
+          <label for="terms">*I accept the Terms and Conditions</label>
+          <input id="terms" name="terms" type="checkbox" />
+          <div class="error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <script src="form1.js"></script>
+  </body>
+</html>
